@@ -1,0 +1,49 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto ;
+    text-align: center;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+#background {
+    height: 725px;
+}
+body {
+    background-color: pink;
+}
+header {
+    background-color:yellowgreen;
+}
+nav a:hover {
+    background-color: silver;
+}
+.logo {
+    width: 80px;
+}
+.icon {
+    width: 80px;
+}
+#hero-img {
+    width: 100%;
+}
+nav a {
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+footer p {
+    font-size: 1.4em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
