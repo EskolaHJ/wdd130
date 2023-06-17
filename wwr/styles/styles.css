@@ -93,7 +93,7 @@ footer p a:hover {
     text-decoration: underline;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--paragraph-font);
+    font-family: var(--heading-font);
    
   }
 
@@ -111,7 +111,14 @@ h1, h2, h3, h4, h5, h6 {
     grid-row: 6/7;
     box-shadow: 5px 5px 10px #6f7364;
 }
-
+.msg1 {
+    background-color: bisque;
+    line-height: 1.5em;
+    padding: 20px;
+    grid-column: 1/5;
+    grid-row: 3/4;
+    box-shadow: 5px 5px 10px #6f7364;
+}
 #logo_link {
     padding-top: 3px;
     justify-self: center;
@@ -164,8 +171,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .home-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.home-grids {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
 }
 .card-img, .mountains {
     width: 100%;
@@ -191,7 +203,8 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 2/7;
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
-   
+    position: relative;
+    z-index: -1;
 }
 footer {
     background-color: #6f7364;
