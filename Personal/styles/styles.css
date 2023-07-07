@@ -77,7 +77,7 @@ nav a {
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(5, .39fr);
 }
 .home-grids {
     display: grid;
@@ -104,7 +104,7 @@ footer {
 }
 #hero-img {
     width: 100%;
-    z-index: -1;
+    z-index: -2;
     grid-column: 1/6;
     grid-row: 1/2;
     position: absolute;
@@ -142,13 +142,13 @@ h3 {
 }
 .pain {
     grid-column: 1/2;
-    grid-row: 3/4;
+    grid-row: 2/4;
    
 }
 .code {
     grid-column: 4 / 5;
-    grid-row: 3/4;
-    position: static;
+    grid-row: 2/4;
+    /* position: sticky; */
 }
 .learning{
     grid-column: 7 / 10;
