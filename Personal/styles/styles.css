@@ -3,6 +3,11 @@
     --heading-font: "Lato";
     --paragraph-font: Montserrat, Poppins, Source Sans Pro;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 .content {
     max-width: 1600px;
     margin: 0 auto;
@@ -84,7 +89,8 @@ nav a {
 .home-grids {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(5, .65fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
 }
 footer p {
     font-size: 1.5em;
@@ -160,18 +166,32 @@ h3 {
 
 /* Second Page */
 .learn {
-    grid-area: 7 / 1 / 8 / 5;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border: 15px transparent;
+    padding: 50px;
+    margin: 10px;
 }
 .time {
-    grid-area: 7 / 5 / 8 / 6;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    border: 15px transparent;
+    padding: 50px;
+    margin: 15px;
 }
 .msgs {
-    grid-area: 8 / 5 / 9 / 6 ;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    border: 15px transparent;
+    padding: 50px;
+    margin: 10px;
 }
-#p.code {
+.pcode {
     grid-column: 1 / 2;
-    grid-row: 8 / 9;
-    position: absolute;
+    grid-row: 2 / 3;
+    border: 15px transparent;
+    padding: 50px;
+    margin: 10px;
 }
 #hero-img1 {
     grid-column: 1 / 11;  /* occupies the entire width of the grid, from column line 1 to 11 */
