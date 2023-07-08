@@ -182,11 +182,6 @@ h1, h2, h3, h4, h5, h6 {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(4, 1fr);
 }
-.home-grids {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-}
 .card-img, .mountains {
     width: 100%;
 }
