@@ -82,7 +82,10 @@ nav a {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, 1fr);
 }
-
+.home-grids {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 footer p {
     font-size: 1.5em;
 }
@@ -108,6 +111,12 @@ footer {
     grid-row: 1/2;
     position: absolute;
 }
+#hero-img1 {
+    width: 100%;
+    z-index: -2;
+    grid-column: 1/6;
+    grid-row: 1/2;
+}
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
@@ -118,6 +127,7 @@ footer {
     grid-column: 1 / 4;
     grid-row: 1 / 3;
     z-index: -1;
+    text-align: center;
 }
 #logo_link {
     padding-top: 3px;
@@ -158,38 +168,38 @@ h3 {
 /* Second Page */
 .try {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column: 1 / 11;
     grid-row: 4 / 7;
-    position: sticky;
 }
-#learn {
+.topic {   
+    position: absolute;
+    top: 60px;
+    width: 100%;
+}
+.learn {
     grid-column: 1 / 3;
-    grid-row: 2 / 3;
     border: 15px transparent;
     padding: 50px;
     margin: 10px;
     z-index: 1;
 }
-#time {
+.time {
     grid-column: 5 / 6;
-    grid-row: 2 / 3;
     border: 15px transparent;
     padding: 50px;
     margin: 15px;
     z-index: 1;
 }
-#msgs {
+.msgs {
     grid-column: 5 / 6;
-    grid-row: 3 / 4;
     border: 15px transparent;
     padding: 50px;
     margin: 10px;
     z-index: 1;
 }
-#pcode {
+.pcode {
     grid-column: 1 / 2;
-    grid-row: 3 / 4;
     border: 15px transparent;
     padding: 50px;
     margin: 10px;
