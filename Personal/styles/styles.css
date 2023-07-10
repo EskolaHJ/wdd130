@@ -3,11 +3,7 @@
     --heading-font: "Lato";
     --paragraph-font: Montserrat, Poppins, Source Sans Pro;
 }
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
 .content {
     max-width: 1600px;
     margin: 0 auto;
@@ -86,12 +82,7 @@ nav a {
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, .60fr);
 }
-.home-grids {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 15px;
-}
+
 footer p {
     font-size: 1.5em;
 }
@@ -171,20 +162,23 @@ h3 {
     border: 15px transparent;
     padding: 50px;
     margin: 10px;
+    z-index: 1;
 }
 .time {
-    grid-column: 3 / 4;
+    grid-column: 5 / 6;
     grid-row: 1 / 2;
     border: 15px transparent;
     padding: 50px;
     margin: 15px;
+    z-index: 1;
 }
 .msgs {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
     border: 15px transparent;
     padding: 50px;
     margin: 10px;
+    z-index: 1;
 }
 .pcode {
     grid-column: 1 / 2;
@@ -192,6 +186,11 @@ h3 {
     border: 15px transparent;
     padding: 50px;
     margin: 10px;
+    z-index: -1;
+}
+#pcode {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
 }
 #hero-img1 {
     grid-column: 1 / 11;  /* occupies the entire width of the grid, from column line 1 to 11 */
@@ -200,3 +199,71 @@ h3 {
     height: 100%;  /* covers the entire height of the grid cell */
     object-fit: cover;  /* ensures that the aspect ratio of the image is preserved while it's scaled up to fill its container */
 }
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

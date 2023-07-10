@@ -7,24 +7,35 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-    <div class="content">
+    <div id="content">
         <header>
             <a id="logo_link" href="personal.html">
                 <img class="logo" src="images/Sunset_Sky.jpg" alt="Peace">
             </a>
-            <nav>
+            <div class="navbar">
                 <a href="index.html">Home</a>
-                <a href="current.html">Phthon</a>
-                <a href="#">Contact Us</a>
-                <a href="https://facebook.com" target="_blank"></a>
-            </nav>    
+                <a href="site-plan-personal.html">Site-Plan</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Dropdown
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="#">Page 3</a>
+                  </div>
+                </div>
+              </div>  
         </header>
-        <div id="hero">
-            <div id="hero-box">
-                <img id="hero-img1" src="images/sands.time.png" alt="Code">
+
+        <div class="section">
+            <div id="hero">
+                <div id="hero-box">
+                    <img id="hero-img1" src="images/sands.time.png" alt="sands">
+                </div>
             </div>
         </div>
-        <main class="home-grids">
+
+        <main class="home-grid">
             <div class="learn">
                 <p>Currently I have learned the basics along with functions in Python. I have found that there are large varieties of what
                     python can do as a language. Some of the aspects being able to pull date from csv files along with lists. Having the capability
@@ -39,8 +50,6 @@
                   and use the skills that you learn grow. Just like how at the start of learning Python I found myself struggling with a simple loop
                   function. By the end of the my class I was able to write my own call functions by using the define function built in. 
                 </p>
-                <!-- <div class="background">
-                    <img class="clouds" src="images/clouds.jpg" alt="cloud"> -->
             </div>
     
             <section class="msgs">
