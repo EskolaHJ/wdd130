@@ -85,6 +85,10 @@ nav a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+.home-grid3 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
 footer p {
     font-size: 1.5em;
 }
@@ -262,4 +266,38 @@ h3 {
   /* Show the dropdown menu on hover */
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+  /* page 3 */
+  .about1 {
+    color: greenyellow;
+    grid-column: 1 / 6;
+    border: solid black;
+    background-color: #8a0646;
+    padding: 12px;
+}
+  .skills {
+    color: #f9f9f9;
+    grid-column: 6 / 9;
+    border: solid black;
+    background-color: #8a0646;
+  }
+  .Pic1 {
+    grid-column: 1 / 6;
+    padding: 12px;
+  }
+  .picture {
+    grid-column: 6 / 7;
+    padding: 12px;
+    box-shadow: black;
+    margin-top: 50%;
+    margin-bottom: 50%;
+  }
+  .pic2 {
+    grid-column: 7 / 8 ;
+    padding: 12px;
+    box-shadow: black;
+  }
+  .pic3 {
+    grid-column: 8 / 9;
+    padding: 12px;
   }
