@@ -296,12 +296,23 @@ h3 {
     grid-column: 7 / 8 ;
     padding: 12px;
     box-shadow: black;
+    margin-top: 50%;
+    margin-bottom: 50%;
   }
   .pic3 {
     grid-column: 8 / 9;
     padding: 12px;
+    margin-top: 50%;
+    margin-bottom: 50%;
   }
-
+  .pic4 {
+    grid-column: 6 / 7;
+    pad: 12px;
+  }
+  .pic5 {
+    grid-column: 8 / 10;
+    padding: 12px;
+  }
   /* test */
   @media screen and (max-width: 900px) {
     body {
@@ -354,7 +365,7 @@ h3 {
     }
 
     /* page 3 */
-    .about1, .skills, .Pic1, .picture, .pic2, .pic3 {
+    .about1, .skills, .Pic1, .picture, .pic2, .pic3, .pic4, .pic5 {
         grid-column: 1 / -1;
     }
 }
